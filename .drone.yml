@@ -11,7 +11,7 @@ steps:
   pull: always
   image: golang:1.15-alpine
   commands:
-  - apk add --no-cache make git gcc build-base
+  - apk add --no-cache make git gcc build-base curl
   - make clean
   - make vet
   - make lint
